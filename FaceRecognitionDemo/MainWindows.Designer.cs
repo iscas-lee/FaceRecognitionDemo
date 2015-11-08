@@ -34,6 +34,8 @@
             this.ImgBtn1 = new System.Windows.Forms.Button();
             this.ImgBtn2 = new System.Windows.Forms.Button();
             this.Img2TextBox = new System.Windows.Forms.TextBox();
+            this.verifBtn = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.ImgPicBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgPicBox2)).BeginInit();
             this.SuspendLayout();
@@ -88,11 +90,30 @@
             this.Img2TextBox.Size = new System.Drawing.Size(252, 21);
             this.Img2TextBox.TabIndex = 4;
             // 
+            // verifBtn
+            // 
+            this.verifBtn.Location = new System.Drawing.Point(13, 26);
+            this.verifBtn.Name = "verifBtn";
+            this.verifBtn.Size = new System.Drawing.Size(75, 23);
+            this.verifBtn.TabIndex = 6;
+            this.verifBtn.Text = "验证";
+            this.verifBtn.UseVisualStyleBackColor = true;
+            this.verifBtn.Click += new System.EventHandler(this.verifBtn_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(113, 27);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 21);
+            this.textBox1.TabIndex = 7;
+            // 
             // MainWindows
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(714, 467);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.verifBtn);
             this.Controls.Add(this.ImgBtn2);
             this.Controls.Add(this.Img2TextBox);
             this.Controls.Add(this.ImgBtn1);
@@ -116,6 +137,8 @@
         private System.Windows.Forms.Button ImgBtn1;
         private System.Windows.Forms.Button ImgBtn2;
         private System.Windows.Forms.TextBox Img2TextBox;
+        private System.Windows.Forms.Button verifBtn;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
