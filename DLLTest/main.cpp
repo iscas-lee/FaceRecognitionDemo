@@ -14,12 +14,12 @@ void main()
 	Mat imgFace2 = imread("D:\\test\\Aaron_Peirsol_0003.bmp", CV_LOAD_IMAGE_GRAYSCALE);
 	;*/
 
-	IplImage* imgFace1 = cvLoadImage( "D:\\test\\Aaron_Peirsol_0002.bmp",  CV_LOAD_IMAGE_GRAYSCALE);
-	IplImage* imgFace2 = cvLoadImage( "D:\\test\\Aaron_Peirsol_0003.bmp",  CV_LOAD_IMAGE_GRAYSCALE);
+	IplImage* imgFace1 = cvLoadImage( "D:\\test\\Aaron_Peirsol_0002.bmp",  CV_LOAD_IMAGE_COLOR);
+	IplImage* imgFace2 = cvLoadImage( "D:\\test\\Aaron_Peirsol_0003.bmp",  CV_LOAD_IMAGE_COLOR);
+
 	char* modelPath = "D:\\code\\cnnFace\\model\\cnnFace.bin";
 	const int layerIdx = 44;
 	const int len = 256;
-
 	float score = FaceVerification(imgFace1, imgFace2, modelPath, layerIdx, len);
 	std::cout << score;
 }

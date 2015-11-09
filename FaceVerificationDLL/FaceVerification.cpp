@@ -4,6 +4,7 @@ FACE_API float FaceVerification(IplImage* imgFace1, IplImage* imgFace2, char* mo
 	float* feat1 = (float*)malloc(featLen*sizeof(float));
 	float* feat2 = (float*)malloc(featLen*sizeof(float));
 
+
 	if(NULL == feat1)
 		std::cout << "feat1 malloc error" << std::endl;
 	if(NULL ==feat2)
@@ -11,22 +12,20 @@ FACE_API float FaceVerification(IplImage* imgFace1, IplImage* imgFace2, char* mo
 
 	cnnFace cnn(modelPath, layerIdx, featLen);
 
-	if (cnn.cnnFaceInit() != 0) {
-		return 0;
-	}
+	Mat img1(imgFace1);// = imread(imgFace1Path, CV_LOAD_IMAGE_GRAYSCALE);
+	Mat img2(imgFace2);// = imread(imgFace2Path, CV_LOAD_IMAGE_GRAYSCALE);
 
-	Mat img1(imgFace1);
-	Mat img2(imgFace2);
-
+	cnn.cnnFaceInit();
 	cnn.getFeature(img1, feat1);
-
-	cnn.getFeature(img2, feat2);
+	cnn.getFeature(img1, feat2);
 
 	float score = cnn.getScore(feat1, feat2);
 
 	cnn.~cnnFace();
 	free(feat1);
 	free(feat2);
+	img1.~Mat();
+	img2.~Mat();
 
 	return score;
 }

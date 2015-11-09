@@ -42,6 +42,8 @@
             // 
             // ImgPicBox1
             // 
+            this.ImgPicBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.ImgPicBox1.Location = new System.Drawing.Point(12, 66);
             this.ImgPicBox1.Name = "ImgPicBox1";
             this.ImgPicBox1.Size = new System.Drawing.Size(270, 335);
@@ -50,6 +52,8 @@
             // 
             // ImgPicBox2
             // 
+            this.ImgPicBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.ImgPicBox2.Location = new System.Drawing.Point(420, 66);
             this.ImgPicBox2.Name = "ImgPicBox2";
             this.ImgPicBox2.Size = new System.Drawing.Size(270, 335);
@@ -58,6 +62,8 @@
             // 
             // Img1TextBox
             // 
+            this.Img1TextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.Img1TextBox.Location = new System.Drawing.Point(13, 424);
             this.Img1TextBox.Name = "Img1TextBox";
             this.Img1TextBox.Size = new System.Drawing.Size(252, 21);
@@ -65,6 +71,8 @@
             // 
             // ImgBtn1
             // 
+            this.ImgBtn1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.ImgBtn1.Location = new System.Drawing.Point(269, 424);
             this.ImgBtn1.Name = "ImgBtn1";
             this.ImgBtn1.Size = new System.Drawing.Size(21, 21);
@@ -75,6 +83,8 @@
             // 
             // ImgBtn2
             // 
+            this.ImgBtn2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.ImgBtn2.Location = new System.Drawing.Point(676, 425);
             this.ImgBtn2.Name = "ImgBtn2";
             this.ImgBtn2.Size = new System.Drawing.Size(21, 21);
@@ -85,6 +95,8 @@
             // 
             // Img2TextBox
             // 
+            this.Img2TextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.Img2TextBox.Location = new System.Drawing.Point(420, 425);
             this.Img2TextBox.Name = "Img2TextBox";
             this.Img2TextBox.Size = new System.Drawing.Size(252, 21);
